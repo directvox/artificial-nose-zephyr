@@ -2,7 +2,7 @@
  * Copyright (c) 2021 Nordic Semiconductor ASA
  * SPDX-License-Identifier: Apache-2.0
  */
-
+#pragma message ("Inclusion paths test")
 #define DT_DRV_COMPAT seeed_grove_multichannel_gas_v2
 
 #include <zephyr/device.h>
@@ -13,7 +13,7 @@
 #include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(GROVE_MULTICHANNEL_GAS_V2, CONFIG_SENSOR_LOG_LEVEL);
 
-#include "drivers/sensor/multichannel_gas_v2/grove_multichannel_gas_v2.h"
+#include <drivers/sensor/multichannel_gas_v2/grove_multichannel_gas_v2.h>
 
 struct grove_multichannel_gas_v2_data
 {

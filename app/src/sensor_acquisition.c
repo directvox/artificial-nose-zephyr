@@ -4,7 +4,7 @@
 #include <zephyr/sys/byteorder.h>
 #include <zephyr/random/random.h>
 
-#include "drivers/sensor/multichannel_gas_v2/grove_multichannel_gas_v2.h"
+#include "grove_multichannel_gas_v2.h"
 #include "sensor_acquisition.h"
 
 #include "model-parameters/model_metadata.h"
