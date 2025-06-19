@@ -5,7 +5,6 @@
 		status = "okay";
 		compatible = "seeed,grove-multichannel-gas-v2";
 		reg = <0x08>;
-		
 	};
 };
 
@@ -20,4 +19,3 @@
 // &cpu0 {
 // 	clock-frequency = <200000000>;
 // };
-

@@ -61,7 +61,7 @@
 cmake_minimum_required(VERSION 3.13.1)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
-project(app LANGUAGES C)
+project(app LANGUAGES C CXX)
 
 target_sources(app PRIVATE
         src/main.c
@@ -94,5 +94,6 @@ set(INCLUDES
     include
     tflite-model
     model-parameters
+    ${CMAKE_SOURCE_DIR}/../include/drivers/sensor/multichannel_gas_v2
     )
 include_directories(${INCLUDES})
